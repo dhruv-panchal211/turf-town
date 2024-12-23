@@ -1,0 +1,121 @@
+.loginScreen {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 476px;
+}
+
+.phoneWrapper {
+  display: flex;
+  gap: 12px;
+  height: 56px;
+  width: 100%;
+}
+
+.countrySelection {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: var(--button-background);
+  padding: 16px;
+  border: 1px solid var(--button-border);
+  border-radius: 11px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.countrySelectionDivider {
+  height: 25px;
+  border: 1px solid var(--secondary-divider);
+  margin-right: 14px;
+  margin-left: 18px;
+}
+
+.submitCodeEnabled {
+  background-color: var(--button-enabled);
+  box-shadow: #0000001f;
+  transition: background-color 0.3s ease;
+}
+
+.submitCodeEnabled:hover {
+  background-color: var(--button-enabled-hover);
+}
+
+.submitCodeDisabled:disabled {
+  cursor: no-drop;
+  background-color: var(--background-disabled);
+  border: 1px solid var(--border-disabled);
+  border-radius: 11px;
+}
+
+.incorrectCode {
+  border: 2px solid var(--error-border);
+  outline: none;
+  background-color: var(--white-faded);
+}
+
+.incorrectCode:focus {
+  outline: none !important;
+}
+
+.textDisabled {
+  color: var(--text-disabled);
+}
+
+.textEnabled {
+  color: var(--white);
+}
+
+.phoneNumber:focus {
+  outline: 2px solid var(--primary-faded);
+  border: none;
+}
+
+.codeWrapper {
+  position: relative;
+}
+
+.codeWrapper .incorrectText {
+  position: absolute;
+  top: 15px;
+  right: 24px;
+  font-size: 17px;
+  color: var(--error-text);
+  font-weight: 700;
+}
+
+.codeInput {
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.codeInput::placeholder {
+  letter-spacing: normal;
+}
+
+.codeInput:focus {
+  outline: 2px solid var(--primary-faded);
+}
+
+.resendCodeContainer {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+  margin-top: 44px;
+}
+
+.resendCodeContainer .text {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.timer {
+  color: var(--text-dark-gray);
+}
+
+.resendCode {
+  cursor: pointer;
+  color: var(--primary);
+  text-transform: capitalize;
+  text-decoration: underline;
+}

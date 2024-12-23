@@ -1,0 +1,10 @@
+.input {
+  background-color: var(--button-background);
+  border: 1px solid var(--button-border);
+  border-radius: 11px;
+  padding: 16px 24px;
+  font-family: var(--font-nunito);
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+.toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(-50%) translateY(10px);
+}
+
+.toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.toastWrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.toastImage {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--toast-background);
+  padding: 2px;
+  border-radius: 100%;
+}
